@@ -1,0 +1,71 @@
+.admin_word {
+  width: 300px;
+  height: auto;
+  margin: 50px;
+  padding: 0;
+}
+
+
+.play__button {
+  width: 20px;
+  height:20px;
+background-image: url('../../assets/play-button.svg');
+background-repeat: no-repeat;
+background-size: contain;
+z-index: 50;
+cursor: pointer;
+
+}
+
+.word__image {
+  width: 90px;
+  height: 70px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 50;
+}
+
+.word-item{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn-word-close {
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  justify-self:flex-end;
+  align-self: flex-end;
+ z-index: 50px;
+}
+
+.btn-close::before {
+  right: 5px;
+  top: 5px;
+}
+
+.word-update {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.word-update label{
+  margin: 0;
+}
+
+.word__btn-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.word__btn-cancel{
+  margin: 20px;
+}
+
+.word__btn-ok{
+  margin: 20px;
+}

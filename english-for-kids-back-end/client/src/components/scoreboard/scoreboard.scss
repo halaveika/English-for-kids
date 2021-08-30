@@ -1,0 +1,30 @@
+.scoreboard {
+  width: 91vw;
+  max-width: 1600px;
+  height: 40px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 0 auto;
+}
+
+.scoreboard__success-item {
+  height: 40px;
+  width: 40px;
+  background-image: url(../../assets/bananas.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 9px;
+  flex-shrink: 0;
+}
+
+.scoreboard__fail-item {
+  height: 40px;
+  width: 40px;
+  background-image: url(../../assets/poo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-left: 9px;
+  flex-shrink: 0;
+}

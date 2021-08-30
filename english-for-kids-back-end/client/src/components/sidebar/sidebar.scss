@@ -1,0 +1,43 @@
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.8s;
+  z-index: 20;
+  background: linear-gradient(gainsboro,aquamarine 50%);
+}
+
+.nav-link {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #f1f1f1;
+}
+
+.play  {
+  background: linear-gradient(rgb(235, 77, 109),orange 50%);
+ }
+
+ .opened {
+   width: 320px;
+ }
+
+ .login-btn {
+   width: 100px;
+   height: 50px;
+   justify-self: flex-end;
+   margin: 50px auto 0 auto;
+ }

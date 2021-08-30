@@ -1,0 +1,114 @@
+.header__switch {
+  width: 150px;
+  height: 40px;
+
+	input {
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	  opacity: 0;
+	  z-index: 100;
+	  position: absolute;
+	  width: 100%;
+	  height: 100%;
+	  cursor: pointer;
+	}
+
+label {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  background-color: aquamarine;
+  box-shadow:
+      inset 0 3px 8px 1px rgba(0,0,0,0.2),
+      0 1px 0 rgba(255,255,255,0.5);
+
+	&:after {
+	  content: "";
+	  position: absolute;
+	  z-index: -1;
+	  top: -4px; right: -4px; bottom: -4px; left: -4px;
+	  border-radius: inherit;
+	  background: #fff;
+	  box-shadow: 0 0 10px rgba(0,0,0,0.3),
+	        0 1px 1px rgba(0,0,0,0.25);
+	}
+
+	&:before {
+	  content: "";
+	  position: absolute;
+
+	  z-index: -1;
+	  top: -18px; right: -18px; bottom: -18px; left: -18px;
+	  border-radius: inherit;
+
+	}
+
+	i {
+	  display: block;
+	  height: 100%;
+	  width: 33%;
+	  border-radius: 100px;
+	  background: silver;
+	  position: absolute;
+	  z-index: 2;
+	  right: 67%;
+	  top: 0;
+	  background: #fff;
+	  box-shadow:
+	      inset 0 1px 0 white,
+	      0 0 8px rgba(0,0,0,0.3),
+	      0 5px 5px rgba(0,0,0,0.2);
+
+		&:after {
+		  content: "";
+		  position: absolute;
+		  left: 15%;
+		  top: 25%;
+		  width: 70%;
+		  height: 50%;
+		  background: #fff;
+
+		  border-radius: inherit;
+		}
+
+		&:before {
+		  content: "train";
+		  text-transform: uppercase;
+		  font-style: normal;
+		  font-weight: bold;
+  
+		  color: rgba(0,0,0,0.4);
+		  text-shadow: 0 1px 0 #bcb8ae, 0 -1px 0 #97958e;
+		  font-family: Helvetica, Arial, sans-serif;
+		  font-size: 15px;
+		  position: absolute;
+		  top: 45%;
+		  margin-top: -7px;
+		  right: -132%;
+		}
+	}
+
+}
+
+input:checked ~ label {
+	i {
+	  right: -1%;
+
+	&:before {
+	  content: "play";
+	  right: 115%;
+	  color: rgba(0,0,0,0.4);
+	  text-shadow:
+	    0 1px 0 #afcb9b,
+	    0 -1px 0 #6b8659;
+	}
+  
+  }
+  background: linear-gradient(rgb(235, 77, 109),orange 50%);
+}
+
+}

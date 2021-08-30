@@ -1,0 +1,24 @@
+.category {
+  width: 300px;
+  height: 280px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin: 50px 25px 50px 25px;
+  background: linear-gradient(gainsboro,aquamarine, 50%,#ffffff 0,#ffffff);
+}
+
+.category__image{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  object-fit: cover;
+}
+
+.cards-container .play{
+  background: none;
+  background: linear-gradient(crimson,orange, 50%,#ffffff 0,#ffffff);
+}

@@ -1,0 +1,65 @@
+.cards-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.start {
+ margin-bottom: 10px;
+}
+
+
+.repeat {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background-image: url(../../assets/looping-arrows.svg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  border: solid 2px black;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.victory-alert{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url(../../assets/victory.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+   background-color: aliceblue;
+  z-index: 100;
+}
+
+.defeat-alert{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url(../../assets/defeat.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: aliceblue;
+  z-index: 100;
+
+}
+
+.defeat-alert h1,
+.victory-alert h1{
+  display: block;
+  z-index: 100;
+  font-size: 6rem;
+}

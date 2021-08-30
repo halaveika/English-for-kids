@@ -1,0 +1,32 @@
+.acategory__add-item {
+  width: 300px;
+  height: 280px;
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around ;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-item__btn-container{
+  width: 200px;
+  height: 40px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.add-item{
+  width: 85px;
+  height: 85px;
+  background-image: url(../../assets/addItem.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
+}

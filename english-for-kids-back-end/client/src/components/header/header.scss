@@ -1,0 +1,10 @@
+.header {
+  height: 80px;
+  padding-right: 60px;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end!important;
+};
