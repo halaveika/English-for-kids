@@ -25,7 +25,7 @@ const start = async () => {
   try {
     await mongoose
       .connect('mongodb+srv'
-      + '://halaveika:43141231@cluster0.ghats.mongodb.net/'
+      + ''
       + 'english-for-kids-halaveika?retryWrites=true&w=majority',
       {
         useNewUrlParser: true,
